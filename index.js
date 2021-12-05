@@ -6112,7 +6112,11 @@ break
 dua = fs.readFileSync('./zeeone/tambahan.js');
 reply(`iya ada apa manggil bot? ketik <!allmenu/#menu> untuk melihat fitur bot`)
 }
-if (budy.includes("Biar","biar")) {
+if (budy.includes(`esah`)) {
+tujuh = fs.readFileSync('./zeeone/desah.opus');
+alpha.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+}
+if (budy.includes("iar","Biar")) {
 const meek = fs.readFileSync('./zeeone/biar.opus');
 alpha.sendMessage(from, meek, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 }
@@ -6120,7 +6124,7 @@ if (budy.includes("Halo","halo","Hello")) {
 const gatau = fs.readFileSync('./zeeone/halo.opus');
 alpha.sendMessage(from, gatau, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 }
-if (budy.includes("sad","Sad")) {
+if (budy.includes("Sad","sad")) {
 const irimp3 = fs.readFileSync('./zeeone/sad.opus');
 alpha.sendMessage(from, irimp3, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 }
