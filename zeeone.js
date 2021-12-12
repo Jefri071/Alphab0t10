@@ -21,7 +21,7 @@ nocache("./index.js", (module) => console.log(`${module} is now updated!`));
 const starts = async (client = new WAConnection()) => {
   client.logger.level = "warn";
   client.version = [2, 2143, 4];
-  client.browserDescription = ["Putra Ganteng", "Chrome", "3.0"];
+  client.browserDescription = ["hi feedz", "Chrome", "3.0"];
   console.log(banner.string);
   client.on("qr", () => {
     console.log(
@@ -44,9 +44,9 @@ const starts = async (client = new WAConnection()) => {
     "./session.json",
     JSON.stringify(client.base64EncodedAuthInfo(), null, "\t")
   );
-        ownerNumber = ["6289626029135@s.whatsapp.net",`6289626029135@s.whatsapp.net`]
-        dtod = "6289626029135@s.whatsapp.net"
-       otod = `6289626029135@s.whatsapp.net`
+        ownerNumber = ["15013336668@s.whatsapp.net",`15017778877@s.whatsapp.net`]
+        dtod = "15013336668@s.whatsapp.net"
+       otod = `15017778877@s.whatsapp.net`
 
   client.on("group-update", async (anu) => {
     metdata = await client.groupMetadata(anu.jid);
@@ -88,7 +88,7 @@ const starts = async (client = new WAConnection()) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Haii kak *@${num.split('@')[0]}* ! Selamat Datang Yah Di Grup ${mdata.subject}\n\nJangan Lupa Intro and following rules Grup❤️`
+				teks = `Haii kak *@${num.split('@')[0]}* ! Selamat datang di group ${mdata.subject}\n\nJangan Lupa Intro`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 				} else if (anu.action == 'remove') {
@@ -98,7 +98,7 @@ const starts = async (client = new WAConnection()) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Dadah:v @${num.split('@')[0]}\n\nBtw kamu cakep juga`
+				teks = `Dadah:v @${num.split('@')[0]}`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -106,14 +106,14 @@ const starts = async (client = new WAConnection()) => {
 fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;pemuda;;;\nFN:pemuda\nitem1.TEL;waid=6289626029135:6289626029135\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
 
 num = anu.participants[0]
-teks = `*P R O M O T E - D E T E C T E D*\nUsername: @${num.split('@')[0]}\nTime : ${moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')}\nGroup: ${mdata.subject}\n\nSelamat Yah atas Kenaikan Pangkatnya 🔥`
+teks = `*P R O M O T E - D E T E C T E D*\nUsername: @${num.split('@')[0]}\nTime : ${moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')}\nGroup: ${mdata.subject}\n\nBerhasil promote!`
 client.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [num]}, quoted: fkontakk})
 console.log(color('|TRM|'), color(`Promote Member ${num.split('@')[0]} In ${mdata.subject}`,  'cyan'))
 } 
 else if (anu.action == 'demote') {
 fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;pemuda;;;\nFN:pemuda\nitem1.TEL;waid=6289626029135:6289626029135\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
 num = anu.participants[0]
-teks = `*D E M O T E - D E T E C T E D*\nUsername: @${num.split('@')[0]}\nTime : ${moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')}\nGroup: ${mdata.subject}\n\nMamposs Nggak jadi Admin lagi, mangkanya yg Becuss..!!`
+teks = `*D E M O T E - D E T E C T E D*\nUsername: @${num.split('@')[0]}\nTime : ${moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')}\nGroup: ${mdata.subject}\n\nBerhasil demote!`
 client.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [num]}, quoted: fkontakk})
 console.log(color('|TRM|'), color(`Demote Admin ${num.split('@')[0]} In ${mdata.subject}`,  'cyan'))
 }
