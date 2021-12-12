@@ -1,3 +1,5 @@
+*/Assalamu'alaikum*/
+
 const
 	{
 		WAConnection: _WAConnection,
