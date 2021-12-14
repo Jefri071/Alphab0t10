@@ -1,5 +1,3 @@
-*/Assalamu'alaikum*/
-
 const
 	{
 		WAConnection: _WAConnection,
@@ -1880,8 +1878,8 @@ if (asd.presences) {
         return `./sticker/data.exif`
     }
     const json = {
-        "sticker-pack-name": packname,
-        "sticker-pack-publisher": author,
+        "sticker-pack-name": Botti,
+        "sticker-pack-publisher": BOT,
     }
 
     const littleEndian = Buffer.from([0x49, 0x49, 0x2A, 0x00, 0x08, 0x00, 0x00, 0x00, 0x01, 0x00, 0x41, 0x57, 0x07, 0x00])
